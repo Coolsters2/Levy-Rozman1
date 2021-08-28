@@ -1,0 +1,92 @@
+<!Doctype>
+<html>
+
+<head>
+    <title>FirstWeb in Brackets </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <script src="main.js"></script>
+</head>
+
+<body onload="slider()">
+    
+    <div class="topnav"></div>
+    <ul class="menu">
+        <li class="links">Home</li>
+        <li class="links">My videos</li>
+        <li class="links">Work</li>
+        <li class="links">Writings</li>
+        <l1 class="links">Contact</l1>
+    </ul>
+    <section id="welcome">
+        <div class="parralax - inner">
+            <img src="https://pbs.twimg.com/media/ErpCwAQXIAA3mvw.jpg" id="slideImg">
+
+        </div>
+    </section>
+
+    <section id="bio">
+        <div class="line">
+        </div>
+        <p>
+            <div class="Container">
+        <div class="about">
+            <h1>About</h1>
+            Rozman was born in Brooklyn, New York, on December 5, 1995, and lived in both New York and New Jersey growing up.[3][4] He began playing chess at the age of 6 as an extracurricular activity and entered his first tournament at the age of 7.[5][6] Rozman attained the titles of National Master in 2011 through the US Chess Federation, FIDE Master in 2016, and International Master in 2018.[7][2] Rozman started as a scholastic chess coach in 2014.[8]
+        </div>
+        <br><br>
+        <div class="Chess Prodigy">
+            <h1>Streamer</h1>
+            Rozman is a Twitch streamer and YouTuber. He has one of the top 2 chess channels on YouTube.[5] Rozman works closely with Chess.com and has been part of their streaming partnership since 2017.[9] Rozman is a regular commentator for the platform, analyzing tournaments like PogChamps and the 2020 Candidates Tournament.[3]
+
+Like many online chess personalities, Rozman experienced a surge of growth during the COVID-19 pandemic, particularly following the release of The Queen's Gambit.[6][10] Rozman has multiple videos with more than one million views. These include an instructional opening overview where he discusses how to play the Queen's Gambit and a video where he plays against the Beth Harmon bot on Chess.com.[6] He has done in-depth explanations of games played in the series.[11] Rozman's YouTube channel reached 1 million subscribers on 1 June 2021.[12]
+
+        </div>
+        <br><br>
+        <div class="World">
+            <h1>Tournaments</h1>
+            Carlsen became World Chess Champion in 2013 by defeating Viswanathan Anand. In the following year, he retained his title against Anand, and won both the 2014 World Rapid Championship and World Blitz Championship, thus becoming the first player to hold all three titles simultaneously, a feat he repeated in 2019. He defended his classical world title against Sergey Karjakin in 2016, and against Fabiano Caruana in 2018.
+            
+            <script>
+                
+                var slideImg = document.getElementById("slideImg");
+                
+                var images = new Array(
+                    "https://i.ytimg.com/vi/8IlJ3v8I4Z8/maxresdefault.jpg",
+                    "https://pbs.twimg.com/media/EoO0y5QXcAAKspP.jpg",
+                    
+                    "https://i.ytimg.com/vi/F3KsdeUDSrA/maxresdefault.jpg",
+                    
+                    "https://i.ytimg.com/vi/dXBapNjnab4/maxresdefault.jpg",
+                    
+                    "https://i.ytimg.com/vi/-ZVbDR3sRRo/maxresdefault.jpg",
+                    
+                    "https://pbs.twimg.com/media/ErpCwAQXIAA3mvw.jpg"
+                
+                );
+                
+                var len = images.length;
+                var i = 0;
+                
+                function slider(){
+                    if(i>len-1){
+                        i = 0;
+                    }
+                    
+                    slideImg.src = images[i];
+                    i++;
+                    
+                    setTimeout('slider()',3000);
+                }
+            </script>
+        </div>
+        </div>
+        <br><br>
+
+        </p>
+    </section>
+</body>
+
+</html>
